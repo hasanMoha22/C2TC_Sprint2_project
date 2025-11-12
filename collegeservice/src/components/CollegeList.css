@@ -1,0 +1,129 @@
+/* 🌟 Main Container */
+.college-list-container {
+  margin: 40px auto;
+  max-width: 1100px;
+  text-align: center;
+  font-family: 'Poppins', sans-serif;
+  color: #333;
+}
+
+/* 🔷 Heading */
+.college-list-container h2 {
+  font-size: 28px;
+  color: #2b3a55;
+  margin-bottom: 25px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  font-weight: 600;
+}
+
+/* 📭 No Data Message */
+.no-data {
+  font-size: 18px;
+  color: #888;
+  font-style: italic;
+  margin-top: 30px;
+}
+
+/* 🧱 Grid Layout for Cards */
+.college-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  gap: 25px;
+  justify-content: center;
+}
+
+/* 🪪 Individual Card */
+.college-card {
+  background: #ffffff;
+  border-radius: 16px;
+  padding: 20px;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.08);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  text-align: left;
+}
+
+.college-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 12px 25px rgba(0, 0, 0, 0.12);
+}
+
+/* 👤 Student Details */
+.college-details h3 {
+  font-size: 22px;
+  color: #0078ff;
+  margin-bottom: 12px;
+  font-weight: 600;
+}
+
+.college-details p {
+  margin: 6px 0;
+  font-size: 15px;
+  color: #444;
+}
+
+.college-details strong {
+  color: #1e3050;
+}
+
+/* 🎛 Buttons Section */
+.card-buttons {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 18px;
+}
+
+.edit-btn,
+.delete-btn {
+  flex: 1;
+  margin: 0 5px;
+  border: none;
+  border-radius: 8px;
+  padding: 10px 0;
+  font-weight: 500;
+  cursor: pointer;
+  color: #fff;
+  font-size: 14px;
+  transition: all 0.3s ease;
+}
+
+/* ✅ Edit Button */
+.edit-btn {
+  background: linear-gradient(135deg, #28a745, #4cd964);
+}
+
+.edit-btn:hover {
+  background: linear-gradient(135deg, #218838, #34c759);
+  transform: scale(1.05);
+}
+
+/* ❌ Delete Button */
+.delete-btn {
+  background: linear-gradient(135deg, #dc3545, #ff6b6b);
+}
+
+.delete-btn:hover {
+  background: linear-gradient(135deg, #c82333, #ff4d4d);
+  transform: scale(1.05);
+}
+
+/* 📱 Responsive Design */
+@media (max-width: 600px) {
+  .college-list-container {
+    padding: 0 10px;
+  }
+
+  .college-card {
+    padding: 15px;
+  }
+
+  .college-details h3 {
+    font-size: 20px;
+  }
+
+  .edit-btn,
+  .delete-btn {
+    font-size: 13px;
+    padding: 8px 0;
+  }
+}
